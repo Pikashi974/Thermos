@@ -7,7 +7,7 @@ const options = {
 let crd;
 
 async function init() {
-  navigator.geolocation.getCurrentPosition(success, error, options);
+  await navigator.geolocation.getCurrentPosition(success, error, options);
   if (crd) {
     getThermos(crd.latitude, crd.longitude);
   }
