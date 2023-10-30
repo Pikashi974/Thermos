@@ -1,15 +1,15 @@
 const options = {
   enableHighAccuracy: true,
-  timeout: 5000,
+  timeout: 10000,
   maximumAge: 0,
 };
 
 let crd;
 
 async function init() {
-  await navigator.geolocation.getCurrentPosition(success, error, options);
+  navigator.geolocation.getCurrentPosition(success, error, options);
   if (crd) {
-    getThermos(crd.latitude, crd.longitude);
+    await getThermos(crd.latitude, crd.longitude);
   }
 }
 
