@@ -7,7 +7,7 @@ const options = {
 let crd;
 
 async function init() {
-  await navigator.geolocation.getCurrentPosition(success, error, options);
+  navigator.geolocation.getCurrentPosition(success, error, options);
 }
 
 init();
