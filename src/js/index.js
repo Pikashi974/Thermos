@@ -31,7 +31,7 @@ async function getThermos(latitude, longitude) {
 }
 
 function success(pos) {
-  return pos.coords;
+  crd = pos.coords;
 }
 
 function error(err) {
