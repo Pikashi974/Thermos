@@ -6,10 +6,6 @@
 h1 {
   color: red;
   font: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
 }
 
 #portfolio {
@@ -29,4 +25,19 @@ h1 {
     rgba(0, 242, 8, 1) 0%,
     rgba(255, 244, 0, 1) 75%
   );
+}
+
+h1,
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
 }
